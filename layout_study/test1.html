@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<style>
+    *{margin: 0; padding: 0; background: gray;}
+    li, ul{list-style: none;}
+    .header{height: 150px; background: green;}
+</style>
+
+    <header>
+        <div class="header"></div>
+    </header>
+
+<style>
+    .container{width:1080px; margin:0 auto}
+    .mainbox{height: 300px; background: #fff; margin:10px 0}
+    .middlebox1{overflow: hidden;}
+    .middlebox1 div{float: left;width:calc(1060px / 3); margin-right:10px; background: #fff;height: 100px;}
+    .middlebox1 div:last-child{margin:0;}
+    .middlebox2{margin: 10px 0}
+    .middlebox2 ul{overflow: hidden;}
+    .middlebox2 li{width:calc(1040px / 5); margin-right: 10px; float: left; ;height: 100px; background: #fff;}
+    .middlebox2 li:last-child{margin:0}
+</style>
+
+    <main>
+        <div class="container">
+            
+            <div class="mainbox">
+
+            </div>
+
+            <div class="middlebox1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+
+            <div class="middlebox2">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+
+            <style>
+                .bottombox{background: #fff; height: 300px; padding:10px; box-sizing: border-box;}
+                .bottombox div{background: green; width:525px; height: 280px; float: left; margin-right: 10px;}
+                .bottombox div:last-child{margin:0}
+                
+            </style>
+
+            <div class="bottombox">
+                <div>1</div>
+                <div>2</div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

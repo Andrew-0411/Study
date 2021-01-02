@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .header{background: red; height: 100px;box-sizing: border-box; position: relative;}
+        .header div:first-child{position: absolute; top:10px; left:10px; width:100px; height: 80px; background: #fff;}
+        .header h1{position: absolute; top:calc(50% - 60px); left:calc(50% - 70px); width:100px; height: 80px; background: #fff;}
+        .header div:last-child{position: absolute; top:10px; right:10px; width:100px; height: 80px; background: #fff;}
+        .mainbox{height: 400px; background: green; position: relative; margin: 10px 0}
+        .left{position: absolute; top:170px; left:10px; display: inline-block ;width:50px; height: 50px; background: #fff;}
+        .center{display: inline-block ;position: absolute; bottom:20px; left:calc(50% - 50px); width:100px; height: 20px; background: #fff;}
+        .right{display: inline-block; position: absolute;top:170px; right: 10px; width:50px; height: 50px; background: #fff;}
+    </style>
+
+    <header>
+        <div class="header">
+                <div>sns</div>
+                <h1>logo</h1>
+                <div>search</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="mainbox">
+                <span class="left">L</span>
+                <span class="center">C</span>
+                <span class="right">R</span>
+            </div>
+
+<style>
+    .centerbar{text-align: center; margin:10px 0 }
+    .centerbar span{display: inline-block; width: 300px; height: 50px; background: orange;}
+
+    .middlebox{width: 1080px; margin: 0 auto; overflow: hidden;}
+    .middlebox>div{float: left; width:calc(1060px / 3); margin-right: 10px; border:1px solid red; box-sizing: border-box;}
+    .middlebox div:last-child{margin:0}
+    
+    .middlebox div div:first-child{height: 300px;}
+    .middlebox div div:last-child{height: 200px; border-top:1px solid black}
+</style>
+
+            <div class="centerbar">
+                <span>centerbar</span>
+            </div>
+
+            <div class="middlebox">
+                <div class>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="bottombox">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer"></div>
+    </footer>
+
+</body>
+</html>

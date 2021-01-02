@@ -1,0 +1,166 @@
+/*common*/
+*{margin:0; padding:0;}
+ul,li{list-style: none;}
+a{color:#000; text-decoration: none;}
+button{border:0; outline: 0; cursor: pointer;}
+body{width:auto; letter-spacing: -0.5px; font-family: 'Noto Sans KR','PT Sans', sans-serif;background: #f9f9f9;}
+h2{font-size: 34px; font-weight: bold; text-align: center; padding:50px 0; font-family:'Roboto', sans-serif; text-align: center;}
+/*햄버거활성시 body 비활성화*/
+body.on{overflow: hidden;}
+
+
+/*fix button*/
+.btn_kakao{background: url(images/btn_kakao.png) no-repeat; width: 50px; height: 50px; background-size: 50px; position: fixed; bottom:90px; right:30px; z-index: 20;
+animation: shake 0.5s; animation-iteration-count: infinite;}
+.btn_top{background: url(images/btn_top.png) no-repeat; width: 50px; height: 50px; background-size: 50px 50px; position: fixed; bottom:20px; right:27px; z-index: 20;}
+
+
+/*header*/
+.header{position: relative; height: 50px; background: #000;}
+.header.header_fix{position:fixed; top:0; left:0; width: 100%; z-index: 30;}
+.header h1 a{background: url(images/logo.png) no-repeat;background-size: 50px 30px; display:block; text-indent: -9999px;
+position: absolute; left:calc(50% - 25px); width:70px; margin-top:12px}
+.header .search{float: right; margin: 16px 16px 0 0; background: #000;}
+.header .search img{width:18px; height: 18px; background: #000;}
+.header .sub_menu{position:relative;}
+.header .sub_menu_wrap{position:fixed; width:100%; height: 0; z-index: 100; top:50px; left:0;overflow: hidden;}
+.header .sub_menu_wrap.on{height: calc(100% - 50px); overflow: auto;}
+.header .sub_menu button{display: block; width:100%; height: 50px; background: #000; color:#fff; font-weight: bold; text-align: left; border-bottom:1px solid #d1d3d5; padding-left:20px;}
+.header .sub_menu a{display: block; width:100%; height: 50px; background: #000; color:#d6d6d6; border-bottom:1px solid  #d1d3d5; padding-top:10px; box-sizing: border-box; padding-left:20px}
+.header .sub_menu .bottom {padding :10px; background: #111111; overflow: hidden;}
+.header .sub_menu .bottom a{color:#fff; background: #111111; width:50%; float: left; border:0; font-size: 12px; height: 35px;}
+
+
+/*main*/
+.main_slider{position: relative;}
+.main_slider img{width:100%;}
+.main_slider button{position: absolute; top:50%; z-index: 10;width: 35px; height: 35px;border-radius: 100%; background: rgba(0,0,0,0.5);font-size: 0;}
+.main_slider button::before{font-family:"xeicon"; color:#fff; font-size: 20px;}
+.main_slider button.slick-prev{left:25px;}
+.main_slider button.slick-prev::before{content:"\e93b";}
+.main_slider button.slick-next{right:25px;}
+.main_slider button.slick-next::before{content: "\e93e";}
+.main_slider a{border:1px solid #000; padding:10px 30px; font-weight: bold; position: absolute; left:calc(50% - 81px); bottom:100px}
+.main_slider a:hover{color:#fff; background: #000;}
+.main_slider p{font-size:28px; line-height: 1.4;text-shadow: 0 0 5px #000; color:#fff; padding:40px 20px; word-break: keep-all;}
+.main_slider .main_comment{position: absolute; top:10px;text-align: center; padding-top:50px; margin:0 auto; width:100%; height: 100%;}
+.main_slider .main_comment span{display: block; width:100%;height: 40px; margin:0 auto; text-indent: -9999px; font-size: 0;}
+.main_slider a.white {border:1px solid #fff;color:#fff}
+.main_slider a.white:hover{color:#000; background: #fff;}
+
+.slide_con{position: relative;}
+.slide_con .bongo span{background: url(images/bongo.png)no-repeat center}
+.slide_con .k7 span{background: url(images/k7.png)no-repeat center}
+.slide_con .k9 span{background: url(images/k9.png)no-repeat center}
+.slide_con .seltos span{background: url(images/seltos.png)no-repeat center}
+.slide_con .sorento span{background: url(images/sorento.png)no-repeat center}
+.slide_con .morning span{background: url(images/morning.png)no-repeat center}
+.slide_con .mohave span{background: url(images/mohave.png)no-repeat center;}
+
+
+
+.comment{margin-top:50px}
+.comment div{text-align: center;}
+.comment span{font-size: 32px; font-weight: bold;}
+.comment span:first-child{font-weight: normal;}
+.comment p{font-size:16px; padding:35px;}
+
+
+.sub_slider span{display: block; width:400px; height: 400px;}
+.sub_slider button{position: absolute; top:50%; z-index: 10;width: 35px; height: 35px;border-radius: 100%; background: rgba(0,0,0,0.5); font-size: 0;}
+.sub_slider button::before{font-family:"xeicon"; color:#fff; font-size: 20px;}
+.sub_slider button.slick-prev{left:25px;}
+.sub_slider button.slick-prev::before{content:"\e93b";}
+.sub_slider button.slick-next{right:25px;}
+.sub_slider button.slick-next::before{content: "\e93e";}
+.sub_slider img{width:100%}
+.sub_slider h3{text-align: center;}
+.sub_slider p{font-size: 14px; font-weight: normal; padding: 20px 40px; color:#525252}
+
+
+.comment_block{overflow: hidden; margin:30px 0; padding:0 20px}
+.comment_block>div{margin:100px 0;}
+.comment_block>div.comment_service{margin:0;}
+.comment_block img{width:100%;}
+.comment_block p{font-size: 24px; font-weight: bold; padding:17px 0}
+.comment_block span{font-size: 14px;}
+.comment_block>div.comment_app{margin-bottom:0}
+
+
+.board{padding:15px;}
+.board ul li{margin-bottom:15px; box-shadow:0 2px 5px rgba(25, 25, 25, 0.09)}
+.board img{width:100%; vertical-align: top;}
+.board a{color:#000; font-weight: bold;}
+.board p {font-size: 14px;}
+.board p.tit01{font-weight: bold;}
+.board p.tit02{padding:5px 0}
+.board .txt_wrap{padding:10px; background: #fff;}
+
+
+.tab_menu{padding: 30px 20px; background: #fff;}
+.tab_menu ul div{height: 0; overflow: hidden;}
+.tab_menu ul div ul{padding:5px 0;}
+.tab_menu ul li{padding:10px 0; cursor: pointer; border-bottom:1px solid #f1f1f1; line-height: 30px;}
+.tab_menu ul li li {background: #fff; font-size: 14px; font-weight:300; border:0; line-height: 14px; padding-left:13px}
+.tab_menu button::before{font-family:"xeicon"; color:#000; font-size: 20px; content:"\e935"; background: #fff; line-height: 1;}
+
+
+.footer div{background: #1c1b1b; color: #999999;font-style:normal;}
+.footer .address {padding:30px 15px; font-size:10px; overflow: hidden;}
+.footer .address a{font-style:normal; color:#999999; font-weight: normal; font-size: 14px;}
+.footer.address a:nth-child(7){width:100%}
+.footer.address .pi{color:#fff; font-weight: bold;}
+.footer .address ul li{float: left;width:50%;height: 40px; display: block;line-height: 40px;}
+
+.footer .copyright{overflow: hidden; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; font-size:14px}
+.footer .copyright img{float: left; width:65px; height: 65px; padding-right: 10px;}
+.footer .copyright div{padding-top:10px}
+
+.footer p.cs_wrap{padding:30px 15px; font-size: 14px; display: block; background: #1c1b1b; color:#999999; font-style: normal; font-weight: normal;}
+.footer button{background: #1c1b1b;}
+.footer button::before{font-family:"xeicon";background: #1c1b1b ; color:#fff ;font-size:30px; content:"\e941";margin:0 auto}
+.footer .on::before{font-family:"xeicon";background: #1c1b1b ; color:#fff ;font-size:30px; content:"\e944";margin:0 auto}
+.footer .foot_hide{overflow: hidden; height: 0; font-size: 12px;}
+.footer .btn_hide{text-align: center; padding:10px 0}
+.footer .confirm div{float: left; margin-bottom: 20px; width:100%}
+.footer .confirm img{float: left; padding-right: 10px;}
+.foot_hide{padding: 0 15px}
+.footer .sns{text-align: center; padding:20px 0;}
+.footer .sns a{padding-right: 10px;}
+.footer .sns img{height: 30px;}
+
+
+/*햄버거 메뉴*/
+#wrapper {width:50px;height:50px;position:absolute;margin-top:8px;margin-left:10px;}
+#line-wrapper {cursor:pointer;width:35px;height:25px;}
+.init {animation:none !important;}
+#line-wrapper div {background:#ffffff;margin-top:6px;margin-left:6px;width:25px;height:2px; 
+  border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.5);position:relative;}
+.line-top {animation:line-top .5s forwards ease-out,line-top-rotate .3s .5s forwards ease-out;}
+.line-mid {animation:line-mid .5s forwards ease-out;}
+.line-bot {animation:line-bot .5s forwards ease-out,line-bot-rotate .3s .5s forwards ease-out;}
+@keyframes line-top {
+  0% {transform:translateY(0px)}
+  100% {transform:translateY(13px)}
+}
+@keyframes line-top-rotate {
+  0% {transform:translateY(13px) rotateZ(0deg)}
+  100% {transform:translateY(13px) rotateZ(45deg)}
+}
+@keyframes line-mid {
+  0% {transform:scale(1)}
+  100% {transform:scale(0)}
+}
+@keyframes line-bot {
+  0% {transform:translateY(0px)}
+  100% {transform:translateY(-13px)}
+}
+@keyframes line-bot-rotate {
+  0% {transform:translateY(-13px) rotateZ(0deg)}
+  100% {transform:translateY(-4px) rotateZ(135deg)}
+}
+
+@keyframes shake {
+  0% { transform: translate(3px, 2px) rotate(0deg); }
+  100% { transform: translate(3px, -2px) rotate(0deg); }
+}

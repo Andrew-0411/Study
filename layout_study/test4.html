@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{margin:0; padding:0}
+    ul,li{list-style: none;}
+    body{}
+
+    .header .header_wrap{background: black; height: 100px; position: relative;}
+
+    .sns_wrap{position: absolute; top:10px; left:10px; color:#fff}
+
+    .search_wrap{position: absolute; top:10px; right:10px; color:#fff}
+
+    .header h1{width: 100px; height: 50px; background: #fff; position:absolute; top:20px;
+    left:50%; margin-left:-50px}
+
+</style>
+<body>
+    <header>
+        <div class="header">
+        <div class="header_wrap">
+            <h1><a href="">네이버</a></h1>
+            <div class="sns_wrap">
+                sns
+            </div>
+            <div class="search_wrap">
+                search
+            </div>
+        </div>
+        
+        <style>
+            .gnb{background: #ccc; text-align: center;}
+            .gnb ul {overflow: hidden; display: inline-block}
+            .gnb li {float:left; padding: 0 5px}
+            .gnb li a{color:black; text-decoration:none}
+        </style>
+
+        <nav>
+            <div class="gnb">
+                <ul>
+                    <li><a href="">메뉴1</a></li>
+                    <li><a href="">메뉴2</a></li>
+                    <li><a href="">메뉴3</a></li>
+                    <li><a href="">메뉴4</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <style>
+        .container{width: 1000px; margin:auto;}
+        .top{margin:10px 0; background: red; padding: 5px;}
+        .bottom{margin-bottom: 10px;}
+        .top .main_vis {height: 100px; background: chartreuse;}
+
+        .top .inner{background:#fff; margin-top: 5px; overflow: hidden; padding: 5px; padding-bottom: 0;}
+
+        .gallery_wrap{float:left; width: 775px; overflow: hidden;}
+        .gallery_wrap li {width: 250px; background: blueviolet; float: left; margin-right: 12px; height:147px ;margin-bottom: 5px;}
+        .gallery_wrap li:nth-child(3n){margin-right:0;}
+
+        .banner01{float:right; height: 300px; background: black; width: 200px;}
+    </style>
+
+    <main>
+        <div class="container">
+            <div class="top">
+                <div class="main_vis"></div>
+                <div class="inner">
+                    <div class="gallery_wrap">
+                    <ul>
+                        <li>1</li>        
+                        <li>2</li>        
+                        <li>3</li>        
+                        <li>4</li>        
+                        <li>5</li>        
+                        <li>6</li>        
+                    </ul>
+                </div>
+                    <div class="banner01">aaaa</div>
+                </div>
+            </div>
+            
+            <style>
+                .bottom{
+                    padding:30px; background: blueviolet;
+                }
+                .bottom li {position: relative; height: 183px; padding-left: 285px; background:#fff; margin-bottom: 10px;}
+                .bottom li img{position:absolute; top:0; left:0}
+            </style>
+            
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <img src="test4.jpg" alt="" />
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <img src="test4.jpg" alt="" />
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <img src="test4.jpg" alt="" />
+                        <p>text</p>
+                    </li>
+                    <li>
+                        <img src="test4.jpg" alt="" />
+                        <p>text</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .footer{
+            background: gray; height: 100px;
+        }
+    </style>
+
+    <footer>
+        <div class="footer">
+            footer
+        </div>
+    </footer>
+</body>
+</html>

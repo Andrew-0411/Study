@@ -1,0 +1,177 @@
+*{margin:0; padding:0; font-size: 12px;}
+li,ul{list-style: none;}
+body{background: #f2f4f7;}
+button{border:0; background: #fff; }
+a{text-decoration: none; color:black}
+.blind{position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin:-1px; width:1px; height: 1px;}
+fieldset{border: 0;}
+legend{position: absolute; top:-9999px;left:-9999px}
+.headercolor{height: 198px; background: #fff;}
+.header{width: 1080px; height: 130px; margin:0 auto; padding-top: 10px;}
+.start{color:#888; font-size: 11px;}
+.start:hover{text-decoration: underline;}
+.jr{display: block; background: url(img/sp_main.png) no-repeat ;width:58px; height: 11px; background-position: -78px -179px; }
+.jr:hover{display: block; background: url(img/sp_main.png) no-repeat ;width:58px; height: 11px; background-position: -83px -39px; }
+.bin{display: block; background: url(img/sp_main.png) no-repeat ;width:34px; height: 12px; background-position: -146px -179px;}
+.bin:hover{display: block; background: url(img/sp_main.png) no-repeat ;width:34px; height: 12px; background-position: -152px -39px;}
+.header .topheight{height: 30px;}
+.header .top {float: right; padding:10px}
+.header .top a{float:left;padding-right: 5px;}
+
+.header .bottom{height: 100px; padding: 10px; box-sizing: border-box;}
+h1{display: block; background: url(img/sp_search.svg) no-repeat ;width:198px; height: 48px; background-position: -4px -4px;
+; text-indent: -9999px; float: left; padding-right: 15px}
+.header .bottom input{width:470px; height: 45px; border: 2px solid #03cf5d; font-size: 16px; float: left;}
+.header .bottom button{width:49px; height: 49px; background: #03cf5d;}
+.header .bottom button span{
+    display: block; width: 21px; height: 21px;
+    background: url(img/logo.svg) no-repeat ;
+    background-position: -4px -60px; text-indent:-9999px;
+    margin: 15px auto;
+}
+.mail{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:25px;height: 16px; background-position: -106px -260px;}
+.cafe{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:27px;height: 16px; background-position: -243px -182px;}
+.blog{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:40px;height: 16px; background-position: -150px -156px;}
+.iN{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:40px;height: 16px; background-position: -100px -182px;}
+.Pay{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:25px;height: 16px; background-position: -36px -260px;}
+.TV{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:32px;height: 16px; background-position: -243px -78px;}
+.dic{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:26px;height: 16px; background-position: -180px -234px;}
+.news{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:28px;height: 16px; background-position: -243px -130px;}
+.fi{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:26px;height: 16px; background-position: -108px -234px;}
+.house{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:40px;height: 16px; background-position: -150px -182px;}
+.map{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:27px;height: 16px; background-position: -200px -182px;}
+.movie{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:27px;height: 16px; background-position: -200px -156px;}
+.music{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:26px;height: 16px; background-position: 0 -234px;}
+.book{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:13px;height: 16px; background-position: -75px -52px;}
+.toon{display: block ;background: url(img/sp_nav_v200408.png) no-repeat; width:27px;height: 16px; background-position: -243px -156px;}
+
+.nav{width: 1080px; height: 47px; margin: 0 auto;padding-top:22px; overflow: hidden;}
+.nav a{float: left; padding-right: 10px;}
+.navtop{border-top:1px solid #d3d3d3; }
+.container{width:1100px;margin:0 auto; padding:8px 10px 0; box-sizing: border-box;}
+.container .top {overflow: hidden; margin-bottom:8px}
+
+.container .top .tleft{width: 740px;float: left;}
+.tleft .con1{width: 740px;height: 120px; border:1px solid #dee3eb; background: #fff;}
+.tleft .con2{width: 740px; height: 46px; border:1px solid #dee3eb; 
+margin: 8px 0;overflow: hidden; padding :10px; box-sizing: border-box; background: #fff;}
+
+.tleft .con2 ul li{float: left;}
+.tleft .con2 ul:last-child{float: right;}
+.tleft .con2 ul:last-child li{padding-left: 10px;}
+.tleft .con3{width: 740px; height: 246px;background: #fff; box-sizing: border-box;border:1px solid #dee3eb;}
+.con3top {height: 45px; font-size: 14px;}
+.con3top ul{line-height: 41px;}
+.con3top ul li{float: left; }
+.con3top ul:first-child li{padding: 0 10px}
+.con3top ul:last-child{float: right;}
+.con3top .smallbtn {width: 32px; height: 44px; margin-right: 10px; background: gray;}
+.con3 .con3top .bigbtn {width: 44px; height: 44px; background: gray;}
+.con3 .con3bottom ul li{float: left;width: 123px; height: 67px;text-align: center; border-right:1px solid #f1f3f6;border-top:1px solid #f1f3f6; box-sizing: border-box;padding-top: 22px;}
+
+.container .top .right{width: 332px; float:right}
+.container .top .right .con1{height: 118px; background: #fff; border:1px solid #dee3eb; font-size: 10px;}
+.container .top .right .con1 p {height: 40px; padding: 10px; box-sizing: border-box;}
+.container .top .right .con1 a h3{font-size:15px;font-weight: 700;text-align: center;border: 1px solid #15c654;
+border-radius: 2px;background: #19ce60; height: 40px; color:#fff; padding-top: 10px; box-sizing: border-box;
+width: 80%; margin: 0 auto}
+.container .top .right .con1 ul {padding: 0 15px}
+.container .top .right .con1 ul li{float: left;padding:20px 5px 0 0;}
+.container .top .right .con1 ul li:last-child{float: right;}
+
+.right .con2 .top {margin:0}    
+.container .top .right .con2{height: 140px; background: #fff; margin: 8px 0; border:1px solid #dee3eb}
+.container .top .right .con2 .top{height: 34px; overflow: hidden; 
+    box-sizing: border-box; border-bottom:1px solid #d3d3d3}
+.con2 .top ul:first-child li{padding: 5px 0 0 10px;}
+.con2 .top ul li{float: left;}
+.con2 .top ul:last-child{float: right;}
+.middlebtn {width: 34px; height: 33px; background: gray;}
+
+.container .top .right .con2 .bottom{font-size: 10px; padding:15px; position: relative;}
+.container .top .right .con2 .bottom ul{display: inline-block;}
+.container .top .right .con2 .bottom ul:last-child{float: right;}
+.container .top .right .con2 .bottom ul li{padding:5px; box-sizing: border-box;}
+.container .top .right .con2 .bottom img{position: absolute; top:17%; right:13%}
+
+.top .right .con3 {border:1px solid #dee3eb;}
+
+.container .bottom {overflow: hidden}
+.container .bottom .left{width: 740px; float: left;}
+.hamburgerBtn{width: 45px; height: 45px;}
+.line{width: 10px; background: #888;}
+
+.container .bottom .left .con1{height: 884px; background: #fff;border:1px solid #dee3eb}
+.container .bottom .left .con1 .top{height: 45px; line-height: 45px; border-bottom: 1px solid #d3d3d3;}
+.container .bottom .left .con1 .top ul{overflow:hidden}
+.container .bottom .left .con1 .top ul li{float: left; padding-right :10px}
+
+.con1 .bottom {padding: 18px 2px 3px 16px;}
+.con1 .bottom li{float: left; width: 166px; height: 185px;margin-right: 14px; margin-bottom: 19px;box-sizing: border-box;}
+.container .bottom .left .con2{height: 130px; background: #fff; margin:10px 0;border:1px solid #dee3eb}
+.container .bottom .left .con2 div {padding: 15px; box-sizing: border-box;}
+.container .bottom .left .con2 div div{border:1px solid #d3d3d3; width:350px; height: 100px; float: left;}
+.container .bottom .left .con2 div div:last-child{float: right;}
+.con1 .bottom span{white-space: nowrap; color: gray;}
+.con1 .bottom a{font-weight: bold; padding-top:10px; display:block;}
+
+.container .bottom .right{width: 330px; float: right;}
+                
+.container .bottom .right .con1{height: 884px; background: #fff; border:1px solid #dee3eb; box-sizing: border-box;}
+
+.container .bottom .right .con1 .top{height: 48px; border-bottom:1px solid #d3d3d3; padding: 18px; box-sizing: border-box;}
+.container .bottom .right .con1 .top ul:last-child{float: right;}
+.container .bottom .right .con1 .top ul li{float: left; padding-right: 10px;}
+
+.container .bottom .right .con1 .middle{font-size: 11px; padding:7px; box-sizing: border-box; line-height: 20px;}
+.container .bottom .right .con1 .middle ul{display: inline-block;}
+.container .bottom .right .con1 .middle ul:first-child li{padding-right: 10px;}
+.container .bottom .right .con1 .middle ul:last-child li{padding-right: 5px;}
+.container .bottom .right .con1 .middle ul li{float: left;}
+.container .bottom .right .con1 .bottom{width: 300px; margin: 0 auto; border-top:1px solid #d3d3d3}
+
+.container .bottom .right .con2{height: 130px; background: #fff; margin:10px 0; border:1px solid #dee3eb}
+
+.shopbot img {width: 94px; height: 117px;}
+.shopbot ul {padding:43px 8px 0 16px;}
+.shopbot li{float: left; width:94px; height: 174px; margin-right: 8px;}
+.shopbot li:nth-of-type(3n){margin: 0;}
+.shopbot span{white-space: nowrap;}
+.shopbot div{float: right;}
+.shopbot div span{padding-right: 10px;}
+.shopbot button{width:25px; height: 25px; background: gray;}
+
+.shopping div{height: 29px;}
+.shopping{padding: 10px 16px 0 16px; border-top:1px solid #f1f3f5; overflow: hidden; box-sizing: border-box;}
+.shopping ul li {line-height: 20px;}
+.shopping button{width: 25px; height: 25px; float: right; margin-bottom: -5px;}
+.shopping a:hover{text-decoration: underline;}
+.footer{background: #fff;}
+.footer .top {height: 45px; width: 1080px; margin:0 auto}
+.footer .top ul{overflow: hidden; padding:10px}
+.footer .top ul li{float: left;}
+.footer .top ul li:last-child{float: right;}
+
+.footer .middle{overflow: hidden; height: 110px; width: 1080px; margin: 0 auto;}
+.footer .middle .left{float: left; padding-top:10px; font-size: 10px;}
+.footer .middle .left ul{overflow: hidden; line-height: 25px;}
+.footer .middle .left ul li{float:left; padding-right: 10px;}
+.footer .middle .left ul li:last-child{padding:0}
+.footer .middle .left ul li:first-child{padding-right: 43px;}
+.footer .middle .left ul:first-child li:first-child{padding-right: 43px;}
+.footer .middle .left ul:last-child li:first-child{padding-right: 30px;}
+
+.footer .middle .right{float:right; overflow: hidden;}
+.footer .middle .right div{float:left; padding-top:25px; padding-left: 20px;}
+.footer .middle .right div:first-child{width:185px; height: 50px;}
+.footer .middle .right div:last-child{width:150px; height: 50px;}
+.footer .middle .right div ul{float: left;}
+.footer .middle .right div ul a{float: left;}
+.footer .middle .right div ul li:first-child{width:100%;}
+.footer .middle .right div a{float: right;}
+.whale {background: url(img/sp_main.png); display: block; width: 50px; height: 50px; background-position: -60px -60px;}
+.flower {background: url(img/sp_main.png); display: block; width: 47px; height: 50px; background-position: 0px -120px;}
+.footer .footbox {border:1px solid #dee3eb}
+.footer .bottom{height: 156px; width: 1080px; margin:0 auto}
+.footer .bottom ul{overflow: hidden;}
+.footer .bottom ul li{float: left; padding: 10px 10px 0 0;}

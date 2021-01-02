@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{margin:0; padding:0}
+        ul,li{list-style: none;}
+
+        .header{background: orange; height: 100px;}
+        .slider{width:1100px; margin:0 auto; overflow: hidden;}
+        .slider div{width:500px; height: 350px; background: black;float: left; margin: 30px 0}
+        .slider div:first-child{margin-right: 100px;}
+        .slider div:last-child{position: relative;}
+        .slider span{position: absolute;background: #fff; width: 30px; height: 100px;}
+        .slider span:first-child{top:125px; left:40px}
+        .slider span:last-child{top:125px; right:40px}
+    </style>
+
+    <header>
+        <div class="header"></div>
+    </header>
+
+    <div class="container">
+
+        <div class="slider">
+
+            <div></div>
+            
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="banner"></div>
+        <style>
+            .banner{height: 100px; background: red;}
+            .menu{margin: 30px auto; width: 1100px; border:2px solid black; padding:10px; box-sizing: border-box;}
+
+            .menu .top{overflow: hidden; margin-bottom:10px}
+            .menu .top div{float: left; background: black; height: 200px;}
+            .menu .top div:first-child{width:calc(80% - 10px); margin-right: 10px;}
+            .menu .top div:last-child{width: 20%;}
+ 
+            .menu .bottom{overflow: hidden;}
+            .menu .bottom div{float: left; background: black; height: 250px;}
+            .menu .bottom div:first-child{width:calc(30% - 10px); margin-right: 10px;}
+            .menu .bottom div:last-child{width: 70%;}
+        </style>
+
+        <div class="menu">
+
+            <div class="top">
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="bottom">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <style>
+            .bar{width:1100px; margin:0 auto; height: 50px; border:1px solid black; background: black; box-sizing: border-box;}
+            .bar span{float: right; background:white; width:50px; height: 100%;}
+            .bar span:first-child{width: 80px; float: left;}
+            .bar span:last-child{border-right:1px solid black; box-sizing: border-box;}
+            .board{margin:30px auto; width:1100px;}
+            .board ul{overflow: hidden;}
+            .board ul li{width:calc((1100px - 30px)/4);height:400px; margin-right: 10px; border: 1px solid black; float: left; box-sizing: border-box; margin-bottom:30px; padding-top:300px}
+            .board ul li:nth-child(4n){margin:0}
+            .board span{display: block;height: 50px; border-top:1px solid black; box-sizing: border-box;} 
+
+            .footer{height: 500px; background: gray;}
+        </style>
+
+        <div class="board">
+            <ul>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+</html>

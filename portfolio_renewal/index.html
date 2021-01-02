@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="asset/css/images/favicon.png">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fullpage css -->
+    <link rel="stylesheet" type="text/css" href="asset/plugins/fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="asset/plugins/examples.css" />
+	  <!-- CSS -->
+    <link rel="stylesheet" href="asset/css/portfolio.css">
+
+    <title>김찬혁 포트폴리오</title>
+</head>
+<body>
+    
+
+    <main>
+        
+        <div id="fullpage">
+			<div class="section" id="section1">
+				<div class="main_bg"></div>
+				<div class="txt_wrap">
+					<h1>PORTFOLIO</h1>
+					<p class="temp">/</p>
+					<p class="name">KIM CHANHYUK</p>
+				</div>
+				<div class="mouse">
+				<div class="mouse_scroll"></div>
+				</div>
+				<!--    <p class="scroll_txt">Scroll down</p> -->
+				<!--     <div class="flower1"><img src="asset/css/images/flower1.png" alt=""></div>
+				<div class="flower2"><img src="asset/css/images/flower2.png" alt=""></div>
+				<div class="flower3"><img src="asset/css/images/flower3.png" alt=""></div> -->
+			</div>
+
+        <div class="section" id="section2">
+            <div class="section_wrap">
+
+                <div class="picture"><div class="bg"></div></div>
+                <div class="comment">
+                
+                    <div class="number_box">
+                        <p class="number">01</p>
+                    <div class="title_box">
+                        <p class="title">Angellinus</p>
+                        <p class="sort">PC Web</p>
+                    </div>
+                </div>
+                
+                <div class="comment_box">
+                    <p class="name">엔제리너스 PC 리뉴얼</p>
+                    <span class="bar"></span>
+                    <p>2020.05.18 ~ 2020.05.24</p>
+                    <p>퍼블리싱 100% / 디자인 100%</p>
+                    <p>#HTML5 #CSS3 #JQuery #bx slider #fade effect</p>
+                    <a href="http://whk1140.dothome.co.kr/link/coffee/">VIEW WEBSITE</a>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="section_wrap">
+
+                <div class="picture change_on"><div class="bg"></div></div>
+
+                <div class="comment">
+                    <div class="number_box">
+                    <p class="number">02</p>
+                        <div class="title_box">
+                            <p class="title">KIA Motors</p>
+                            <p class="sort">Mobile</p>
+                        </div>
+                    </div>
+                
+                <div class="comment_box">
+                    <p class="name">기아자동차 MOBILE 리뉴얼</p>
+                    <span class="bar"></span>
+                    <p>2020.05.25 ~ 2020.05.31</p>
+                    <p>퍼블리싱 100% / 디자인 100%</p>
+                    <p>#HTML5 #CSS3 #JQuery #slick slider #XIcon</p>
+                    <a href="http://whk1140.dothome.co.kr/link/car/">VIEW WEBSITE</a>
+                </div>
+                
+                </div>
+            
+                <div class="picture change_off"><div class="bg"></div></div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="section_wrap">
+
+                <div class="picture"><div class="bg"></div></div>
+                <div class="comment">
+                
+                    <div class="number_box">
+                        <p class="number">03</p>
+                        <div class="title_box">
+                            <p class="title">MELON MUSIC</p>
+                            <p class="sort">RESPONSIVE WEB</p>
+                        </div>
+                    </div>
+                    
+                    <div class="comment_box">
+                        <p class="name">멜론뮤직 반응형 리뉴얼</p>
+                        <span class="bar"></span>
+                        <p>2020.06.01 ~ 2020.06.14</p>
+                        <p>퍼블리싱 100% / 디자인 100%</p>
+                        <p>#HTML5 #CSS3 #JQuery #swiper slider</p>
+                        <a href="http://whk1140.dothome.co.kr/link/music/">VIEW WEBSITE</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="section " id="section5">
+
+                <div class="footer">
+                        <p class="text">THANK YOU</p>
+                        <p><img src="asset/css/images/email.png" alt=""><a href="mailto:whk1140@naver.com">whk1140@naver.com</p>
+                        <p><img src="asset/css/images/call.png" alt=""><a href="tel:010-4669-5663">010-4669-5663</a></p>
+                </div>
+            
+        </div>
+    
+    </main>
+
+    <script type="text/javascript" src="asset/plugins/fullpage.min.js"></script>
+    <script type="text/javascript" src="asset/plugins/examples.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            lazyLoad: true,
+            navigation: true,
+        });
+            
+            var docStyle = document.documentElement.style;
+
+            document.addEventListener('mousemove', function(e) {
+            docStyle.setProperty('--mouse-x', e.clientX);
+            docStyle.setProperty('--mouse-y', e.clientY);
+            });
+    </script>
+
+    </body>
+</html>

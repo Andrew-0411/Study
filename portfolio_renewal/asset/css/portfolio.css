@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*{margin:0; padding:0;}
+
+
+a{color:#000; text-decoration: none;}
+ul,li{list-style: none;}
+button{border:0; background: none; outline: 0;}
+body{font-family: 'Noto Sans KR','Roboto', sans-serif;}
+#section1{font-family: 'Poppins', sans-serif;overflow: hidden;}
+#section1 h1{letter-spacing:60px; color:#fff; font-size: 50px;font-weight: 700;}
+#section1 .txt_wrap{position: relative;z-index: 2;}
+#section1{ color:#fff; line-height: 2; letter-spacing: 30px;}
+#section1 .main_bg{
+	background: url(../img/bg01.jpg) no-repeat; background-size: cover; background-position: center;position: absolute;
+	top: 0;left: 0;width: 100%;height: 100%;
+	animation-name: bg_scale;
+	animation-duration: 10s;
+}
+#section1 p{font-size: 30px; color:#f1f1f1}
+
+
+@keyframes bg_scale {
+  0%   {transform: scale(1.3);}
+  100%{transform: scale(1);}
+}
+
+.fp-section.fp-table{
+opacity: 0;
+transform: scale(0.9);
+transition: 1s ease-in-out;
+-moz-transition: 1s ease-in-out;
+-ms-transition: 1s ease-in-out;
+-o-transition: 1s ease-in-out;
+}
+.fp-section.fp-table.active{opacity: 1;transform: scale(1);}
+
+
+.fp-section.fp-table .picture{overflow: hidden;position: relative;}
+.fp-section.fp-table .picture .bg{
+transform: scale(1.3);
+transition: 5s ease-in-out;
+-moz-transition: 5s ease-in-out;
+-ms-transition: 5s ease-in-out;
+-o-transition: 5s ease-in-out;
+}
+.fp-section.fp-table.active .picture .bg{
+	transform: scale(1);
+}
+
+/* #section1 .mouse{width:3px; padding:10px 15px; height: 35px; border:2px solid #fff; border-radius: 25px; opacity: 0.75; box-sizing:content-box; margin:0 auto} */
+
+#section1{transform: scale(1)}
+#section1 .mouse_scroll{height: 20px; width:5px}
+#section1 .scroll_txt{letter-spacing: 0; font-size: 16px; font-weight: bold;}
+#section1 .temp{margin-left:30px}
+/* #section1 .name{padding-bottom: 100px;} */
+#section1 .scroll_btn{position: absolute; top:50%; right:10px; z-index: 20;}
+#section1 .flower1{ transform: translateX(calc(var(--mouse-x) * -0.5px)) translateY(calc(var(--mouse-y) * 0.2px)); position:absolute; left:50%; top:50%; opacity: 0.8}
+#section1 .flower2{transform: translateX(calc(var(--mouse-x) * 0.2px)) translateY(calc(var(--mouse-y) * -0.5px)); position:absolute; right:50%; top:50%; opacity: 0.8}
+#section1 .flower3{transform: translateX(calc(var(--mouse-x) * 0.5px)) translateY(calc(var(--mouse-y) * -0.1px)); position:absolute; right:50%; top:50%; opacity: 0.8}
+
+#section2 .picture .bg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:url(images/coffee1.jpg) no-repeat;background-position: center; background-size: cover;}
+#section3 .picture .bg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:url(images/car1.jpg) no-repeat;background-position: center; background-size: cover;}
+#section4 .picture .bg{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background:url(images/music1.jpg) no-repeat;background-position: center; background-size: cover;}
+#section5 {background: rgb(40, 41, 54);transform: scale(1)};
+
+.section {display:table-cell; text-align: center; vertical-align:middle}
+.section_wrap{overflow: hidden; margin:0 10%}
+.picture{width: calc(100% - 473px); height: 600px; float: left;}
+.change_on{display:none}
+
+.comment{font-size: 16px;position: relative; padding:30px 0 30px 20px; color:#282936;float: left; width:453px}
+.comment .number_box{height: 300px;}
+.comment .number_box .title_box{position: absolute; top:135px; left:125px}
+.comment .number_box .number{color:#efefef; font-size: 200px; position: absolute; font-family: 'Viga', sans-serif;}
+.comment .number_box .title{font-size: 48px; font-family: 'Ubuntu', sans-serif;}
+.comment .number_box .sort{font-size: 18px; text-align: right; font-family: 'Ubuntu', sans-serif;}
+
+.comment .comment_box{text-align: left;color:#666666; padding-left:15px; box-sizing: border-box; line-height: 1.5;}
+.comment .comment_box .bar{display: block; background: #000000; width:50px; height: 2px; margin: 20px 0}
+.comment .comment_box .name{color:#282936; font-weight: bold;}
+.comment .comment_box a {border:1px solid #ddd; padding:10px 15px; display: inline-block; margin: 20px 0; color:#282936; position: relative; overflow: hidden;} 
+.comment .comment_box a:hover{color:#ddd; transition: all 1s}
+.comment .comment_box a::before{content: ''; width:100%; height: 100%; background-color: #282936;transition: all 1s; transform:translateX(-100%); position: absolute; top:0; left:0}
+.comment .comment_box a:hover::before {background:#282936; transition: all 1s; transform:translateX(0); z-index: -1;}
+
+#fp-nav ul li .active span{background: #5ebacc; width: 40px;}
+#fp-nav ul li a span{width:20px; height: 2px; background: #848484; margin-bottom: 10px; display: block;border-radius:0}
+
+.footer{background: url(../img/bg02.jpg) no-repeat; height: 100%; padding-top:15%}
+.footer img{width:20px; height:20px; margin-right:10px}
+.footer .text{letter-spacing: 30px;}
+.footer p {text-align: center;font-size:50px; color:#fff; opacity: 1;}
+.footer p:first-child{padding-bottom: 90px}
+.footer a {font-size:20px; color:#fff; letter-spacing: 0; opacity: 1;}
+
+.mouse_scroll {
+            width: 5px;
+            height: 14px;
+            border-radius: 25%;
+            background-color: #000;
+            animation-name: scroll;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+            animation-iteration-count: infinite;
+        }
+
+@keyframes scroll{
+    0% {
+        opacity:0;
+    }
+    10%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width:1024px){
+    #section1 h1{letter-spacing: 40px; font-size: 40px;}
+    #section1{background-size:auto}
+    #section1 .name{letter-spacing: 10px; font-size: 20px;}
+    #section1 p{font-size: 20px;}
+    #section5{background-size:auto}
+    .picture{width:100%; margin-top: 30px; float: none; height: 300px;}
+    .comment{padding:0; float:none;}
+    .comment .number_box .title_box{top:48px; left:40px}
+    .comment .number_box .number{font-size: 110px;}
+    .comment .number_box{height: 150px;}
+    .comment .number_box .title{font-size: 40px;}
+    .change_off {display: none;}
+    .change_on{display:block}
+    .footer .text{letter-spacing: 15px; font-size: 40px;}
+}
+/*mobile*/
+@media screen and (max-width:760px){
+    #section1 h1{letter-spacing: 30px; font-size: 20px;}
+    #section1 .name{letter-spacing: 7px; font-size: 15px;}
+}

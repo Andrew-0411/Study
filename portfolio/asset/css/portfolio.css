@@ -1,0 +1,80 @@
+*{margin:0; padding:0;}
+a{color:#000; text-decoration: none;}
+ul,li{list-style: none;}
+button{border:0; background: none; outline: 0;}
+body{font-family: 'Noto Sans KR','Roboto', sans-serif; min-width: 1100px;}
+
+.header{position: fixed; width: 100%; top:0; left:0;z-index: 9;}
+.header.on{background: #fff}
+.header.on a{color:#000}
+.header ul{float: right; padding:20px 0; box-sizing: border-box;}
+.header ul li{float: left; padding:0 20px; box-sizing: border-box;}
+.header ul li a{color:#fff; font-size: 20px; cursor: pointer;}
+.header ul li.orange a{color:#fec810; text-decoration: underline;}
+
+.container video{width:100%; vertical-align: top;}
+.container div img{width:100%;}
+.container div img:hover{opacity: 1; transition-delay: 0.35s;}
+
+.main_vis p{font-size: 50px; color:#fff; font-family: 'Montserrat', sans-serif;}
+.main_vis .p01{font-weight: bold; padding-bottom:50px}
+.main_vis .txt_wrap{position: absolute; width:100%; top:0; left:0; text-align: center; top:50%; margin-top:-62px}
+
+.container figure{position: relative; cursor: pointer;}
+.container figure img{vertical-align: top;}
+.container figcaption{border:1px solid #fff; border-width: 1px 1px 0;position: absolute; left:27%; bottom:40%; color:#fff; font-size: 30px;padding:10px 280px}
+.container figcaption div{text-align: center; transform: translateY(50%);}
+.container figcaption span{height: 1px;width: 269px; background: #fff;position: absolute; top:97%;left:64%}
+.container figcaption span:first-child{right:64%;left:0}
+.container figcaption .car_bar{width:273px}
+.container figcaption .music_bar{left:61%; width:272px}
+
+.work_list li{height: 500px; position: relative; color:#fff; cursor: pointer;}
+.work_list li .bg{position: absolute; width:100%; height: 100%; background: rgba(0,0,0,0.0);}
+.work_list li:hover .bg{background: rgba(0,0,0,0.7);}
+.work_list li:hover .inner{height: 300px;}
+.work_list li:hover .border{top:100px; margin-top:0}
+.work_list li:hover a{color:#fff; text-align: center; border:1px solid #fff; padding: 5px 15px;}
+.work_list li:hover .inner_wrap{opacity: 1; top:20px}
+.work_list li:hover .inner_wrap p:last-child{padding-top:30px}
+.work_list .coffee{background: url(images/coffee.jpg) no-repeat; background-size: cover; background-position: center;}
+.work_list .car{background: url(images/car.jpg) no-repeat; background-size: cover; background-position: center;}
+.work_list .music{background: url(images/music.jpg) no-repeat; background-size: cover; background-position: center;}
+
+.border{width:300px; border:1px solid #fff; border-bottom:0;position: absolute; top:50%; margin-top:-25px; left:50%; margin-left:-150px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition:    all .3s ease-in-out;
+        -o-transition:      all .3s ease-in-out;
+        -ms-transition:     all .3s ease-in-out;
+        transition:         all .3s ease-in-out;
+        }
+.border .inner{position: relative; height: 50px;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition:    all .3s ease-in-out;
+                -o-transition:      all .3s ease-in-out;
+                -ms-transition:     all .3s ease-in-out;
+                transition:         all .3s ease-in-out;
+            }
+.border .inner h3{position: absolute; bottom: -12px; left:0; width: 100%; text-align: center;}
+.border .inner h3::before{content:""; width:80px; height: 1px; background: #fff; display:block; position: absolute; left:0; top:15px}
+.border .inner h3::after{content:""; width:80px; height: 1px; background: #fff; display:block; position: absolute; right:0; top:15px}
+.border .inner p{text-align: center;}
+.border .inner .txt01{font-size: 23px; font-weight: bold; padding:25px 0 20px}
+.border .inner .txt02{padding:0 20px 20px; box-sizing: border-box;}
+.border .inner .txt03{font-size: 14px;}
+.border .inner .inner_wrap{position: absolute; top:-30px;left:0; width:100%;opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+}
+.border .inner .inner_wrap a:hover{background: #fff;color:#000}
+
+.footer{background: url(images/footer/contact.jpg) no-repeat; background-attachment: fixed; width:100%; height: 500px; padding:70px 30px; box-sizing: border-box;}
+.footer>p{padding-top:50px; font-size: 10px;}
+.footer div{text-align: center; line-height: 2.6;}
+.footer div img{width:20px; height:20px; vertical-align: middle; margin-right:10px}
+.footer div p:first-child{font-size: 12px;}
+.footer div span{display: inline-block; width:110px; height: 5px; background: rgb(139,34,195);background: linear-gradient(0deg, rgba(139,34,195,1) 0%, rgba(253,187,45,1) 100%);}
+.footer div .comment{font-size: 30px; line-height: 1.5;}
